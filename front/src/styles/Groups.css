@@ -1,0 +1,12 @@
+.group-page-wrapper {
+	display: flex;
+	width: auto;
+	justify-content: space-evenly;
+}
+.settings-wrapper {
+	min-width: 50vh;
+}
+.group-wrapper {
+	margin-left: 15%;
+	min-width: 65vh;
+}

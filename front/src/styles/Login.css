@@ -1,0 +1,6 @@
+.buttons {
+	display: flex;
+	justify-content: space-around;
+}
+.page.login.front {
+}

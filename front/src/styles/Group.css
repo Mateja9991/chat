@@ -1,0 +1,48 @@
+.makeGroupWrapper {
+	display: flex;
+	justify-content: center;
+	margin-top: 1%;
+	width: 65%;
+}
+.formWrapper {
+	margin: 2%;
+	width: 100%;
+}
+
+.xWrapper {
+	display: flex;
+	justify-content: end;
+	cursor: pointer;
+}
+
+.groupsPageWrapper {
+	display: flex;
+	width: 100%;
+}
+
+.updateForm {
+	display: flex;
+	margin-left: 2%;
+	flex-grow: 1;
+	flex-direction: column;
+	justify-content: center;
+}
+.group-separator {
+	flex-grow: 1;
+}
+
+.listOfItemsWrapper {
+	padding: 2%;
+	width: 70%;
+}
+
+.lblNameWrapper {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 2%;
+}
+
+.group-wrapper button {
+	background-color: #ff5555 !important;
+}

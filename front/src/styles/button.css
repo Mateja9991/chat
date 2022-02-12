@@ -1,0 +1,10 @@
+#file-upload-button {
+	background-color: black !important;
+}
+
+.item-button-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-evenly;
+}

@@ -1,0 +1,39 @@
+.friends-page-wrapper {
+  width: 40%;
+  margin-top: 5vh;
+  display: flex;
+  flex-grow: 1 !important;
+  min-width: 60vh;
+  flex-direction: column;
+}
+.friends-page-wrapper :first-child .friends-page-button {
+  border-right: 1px solid rgba(150, 150, 150, 0.5);
+}
+.friends-button-wrapper {
+  display: flex;
+  border-radius: 15px 15px 0px 0px;
+  overflow: hidden;
+  min-height: 5vh;
+}
+.friends-page-button {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f8f8f2;
+  cursor: pointer;
+}
+.friends-page-button span {
+  font-size: 150%;
+}
+.empty-banner {
+  padding: 5vh !important;
+  text-align: center;
+  font-size: large;
+  background-color: #f8f8f2;
+}
+
+.plusIconWrapper {
+  display: flex;
+  justify-content: center;
+}

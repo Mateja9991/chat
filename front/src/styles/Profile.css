@@ -1,0 +1,41 @@
+.userLabelWrapper {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+}
+
+.profileWrapper {
+	display: flex;
+	flex-direction: column;
+	width: 80%;
+}
+
+.settingsWrapper {
+	display: flex;
+	justify-content: center;
+}
+
+.headerWrapper {
+	display: flex;
+	justify-content: center;
+	font-weight: bold;
+}
+
+.popup-container {
+	position: absolute;
+	left: 0%;
+	top: 0%;
+	height: 100%;
+	width: 100%;
+	overflow: hidden;
+}
+.popupWrapper {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	border: 100vh solid rgba(10, 10, 10, 0.9);
+	display: flex;
+	justify-content: center;
+}

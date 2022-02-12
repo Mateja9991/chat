@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<br>
+
+<head>
+
+</head>
+    <button class="msg-button">POSALJI</button>
+    <br>
+    <label>To User:</label>    
+    <input class="user-input" type="text">
+    <label>Message:</label>    
+    <input class="msg-input" type="text" autocomplete="off"><br/>
+    
+    <label>To Team:</label>
+    <input class="team-input" type="text">
+    <label>Message:</label>
+    <input class="team-msg-input" type="text" autocomplete="off"><br/>
+
+    <label>To Session:</label>
+    <input class="session-input" type="text">
+    <label>Message:</label>
+    <input class="session-msg-input" type="text" autocomplete="off"><br/>
+</br>
+</br>
+</br>
+</br>
+</br>
+    <label>REQUEST</label></br>
+    <label>ROUTE</label>
+    <input class="request" type="text"><br/>
+    <label>METHOD</label>
+    <input class="method" type="text"><br/>
+    <label>BODY</label></br>
+    <textarea class="body" rows="16" cols="36"></textarea><br/>
+    <br/>
+    <label>RESPONSE</label></br>
+    <br/>
+    <div class="response"></div>
+    <br/>
+    <button class="request-button">SEND REQUEST</button>
+
+</div>
+    <div id="messages"></div>
+    
+    <script src="https://cogit-api.herokuapp.com/socket.io/socket.io.js"></script>
+    <script src="/js/chat.js"></script>
+</body>
+
+</html>
