@@ -123,8 +123,8 @@
 	justify-content: center;
 	align-items: center;
 	min-width: 7vh;
-	max-width: 40%;
-	padding: 1vh 2.4vh 0 2.4vh;
+	max-width: 100%;
+	padding: 1vh 1vh 0 1vh;
 }
 .msg-image-wrapper {
 	width: 100%;
@@ -178,12 +178,12 @@
 	border-radius: 15px;
 	min-width: 1vh;
 	block-size: fit-content;
-	padding: 1.3vh;
+	padding: 1vh;
 }
 .msg-file-name-container {
 	padding: 1.3vh;
 	font-size: 130%;
-	padding-left: 2vh;
+	padding-left: 1vh;
 	color: rgba(100, 100, 100, 0.9);
 }
 .file-icon {
@@ -238,7 +238,7 @@
 .message {
 	display: flex;
 	flex-direction: column;
-	margin: 1vh 2.4vh 0 2.4vh;
+	margin: 1vh 1vh 0 1vh;
 	border-radius: 20px;
 	font-size: 120%;
 	padding: 1vh;

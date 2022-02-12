@@ -25,6 +25,7 @@ function MessageBox({ selected: user = { id: 1, name: 'User' } }) {
 	const [searchFlag, setSearchFlag] = useState(false);
 	const [usersTypingMessage, setUsersTypingMessage] = useState([]);
 	const [selectedPicture, setSelectedPicture] = useState();
+	const bottomRef = useRef();
 	const [selectedFile, setSelectedFile] = useState();
 	const [recordedAudio, setRecordedAudio] = useState();
 	const [settingsOpened, setSettingsOpened] = useState(false);
@@ -61,6 +62,13 @@ function MessageBox({ selected: user = { id: 1, name: 'User' } }) {
 			socket.off('user-unsent-message');
 		};
 	}, [session, messages]);
+	const scrollToBottom = () => {
+		console.log('scrolling into view');
+		bottomRef.current.scrollIntoView({ behavior: 'smooth' });
+	};
+	useEffect(() => {
+		scrollToBottom();
+	}, [messages]);
 	useEffect(() => {
 		if (socket) {
 			if (newMessageListener) socket.off('new-message', newMessageListener);
@@ -474,7 +482,9 @@ function MessageBox({ selected: user = { id: 1, name: 'User' } }) {
 						''
 					)}
 				</div>
-				<div className="messages">{messageList}</div>
+				<div className="messages">
+					{messageList} <div ref={bottomRef}> </div>
+				</div>
 				{usersTypingMessage.length ? (
 					<div className="users-typing-container">
 						<label className="users-typing-message">

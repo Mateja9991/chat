@@ -41,6 +41,14 @@ function GroupChat({ selected: group = { id: 1, name: 'Group' } }) {
 	let typingIntervalId;
 
 	const socket = useSocket();
+	const bottomRef = useRef();
+	const scrollToBottom = () => {
+		console.log('scrolling into view');
+		bottomRef.current.scrollIntoView({ behavior: 'smooth' });
+	};
+	useEffect(() => {
+		scrollToBottom();
+	}, [messages]);
 	useEffect(() => {
 		if (socket) {
 			socket.on(
@@ -489,7 +497,10 @@ function GroupChat({ selected: group = { id: 1, name: 'Group' } }) {
 						''
 					)}
 				</div>
-				<div className="messages">{messageList}</div>
+				<div className="messages">
+					{messageList}
+					<div ref={bottomRef}> </div>
+				</div>
 				{usersTypingMessage.length ? (
 					<div className="users-typing-container">
 						<label className="users-typing-message">
